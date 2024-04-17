@@ -194,6 +194,21 @@ body {
   .menu__section.left {
     visibility: hidden;
   }
+  .menu__avatar--frame {
+    width: 50px; /* Tamanho desejado para o quadro da imagem */
+    height: 50px; /* Tamanho desejado para o quadro da imagem */
+    border-radius: 50%; /* Para criar o efeito de imagem redonda */
+    overflow: hidden; /* Para garantir que a imagem seja cortada corretamente */
+    border: 2px solid #fff; /* Adiciona uma borda branca ao redor da imagem */
+    box-shadow: 0 0 0 4px #ccc; /* Adiciona uma sombra ao redor da borda */
+}
+
+.menu__avatar {
+    width: 100%; /* Faz a imagem preencher o quadro */
+    height: 100%; /* Faz a imagem preencher o quadro */
+    object-fit: cover; /* Garante que a imagem seja ajustada para caber no quadro, mantendo sua proporção */
+}
+
 }
 @media screen and (max-width: 360px) {
   .content__buttons {
